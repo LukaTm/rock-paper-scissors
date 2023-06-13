@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <title>DOM</title>
+        <script src="../Project-Rock-Paper-Scissors/game.js" defer></script>
+        <link rel="stylesheet" href="./output.css" />
+    </head>
+    <body>
+        <div class="pop-up-background">
+            <div id="play-again-container">
+                <button id="play-again">Play Again</button>
+            </div>
+        </div>
+        <div class="header">
+            <h1 class="title">Rock Paper Scissors</h1>
+        </div>
+        <div class="main h-max">
+            <div class="rules flex flex-col items-center">
+                <span class="choose-weapon font-bold text-3xl mb-2 mt-1"
+                    >Choose your weapon</span
+                >
+                <span class="first-score font-bold text-lg"
+                    >First to score 5 points wins the game</span
+                >
+            </div>
+            <div class="mt-16 flex flex-col items-center">
+                <p
+                    id="words"
+                    class="scoreboard top-48 text-center font-bold text-3xl"
+                ></p>
+                <p id="result" class="score-info text-3xl mt-24"></p>
+                <div class="buttons">
+                    <button id="rock" class="btn btn-square">✊</button>
+                    <button id="paper" class="btn btn-square">✋</button>
+                    <button id="scissors" class="btn btn-square">✌</button>
+                </div>
+            </div>
+        </div>
+        <div id="final-result"></div>
+    </body>
+</html>
